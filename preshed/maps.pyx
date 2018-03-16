@@ -84,6 +84,9 @@ cdef class PreshMap:
     cdef void set(self, key_t key, void* value) except *:
         map_set(self.mem, self.c_map, key, <void*>value)
 
+    cdef void delitem(self, key_t key) except *:
+        map_clear(self.c_map, key)
+
 
 cdef class PreshMapArray:
     """An array of hash tables that assume keys come pre-hashed.  Each table

@@ -15,3 +15,6 @@ preshed/.maps.pyx.swl
 MANIFEST
 build/
 dist/
+.idea/
+/.ipynb_checkpoints/
+/demo.ipynb
